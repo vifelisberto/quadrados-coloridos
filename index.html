@@ -6,15 +6,13 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body ng-app="quadrados" ng-keypress="tecla=!tecla">
-      <h3>Aperte qualquer tecla para pintar os quadrados (aperte novamente para desativar)</h3>
+      <h3>Aperte qualquer tecla e passe a seta do mouse abaixo para pintar os quadrados (aperte novamente para desativar)</h3>
         <section ng-controller="QuadradosController">
             <div ng-repeat="quadrado in quadrados"
             ng-style="{'background-color': quadrado.cor}"
             ng-mouseover="tecla ? alterarCor(quadrado) : angular.noop()">
-
             </div>
         </section>
-
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>
     </body>
