@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family: Courier New;
+  }
+
+h3 {
+  text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div{
+    width: 33.3px;
+    height: 33.3px;
+    background-color: red;
+}
